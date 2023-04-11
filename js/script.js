@@ -18,7 +18,7 @@ createApp({
                 axios.get(this.basePath + 'random/mail').then(
                     (res) => {
                         this.randomMails.push(res.data.response)
-                        console.log(res.data);
+                       // console.log(res.data.response);
                     })
             }
         }
