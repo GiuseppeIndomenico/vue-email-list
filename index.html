@@ -20,17 +20,20 @@
         <button @click='getMail' class="btn btn-outline-info mb-4">Generate new Random Mails</button>
 
         <div v-if="randomMails.length === 10" class="row">
-            <div class="col-6" v-for="(mail, index) in randomMails">
+            <div class="col-6" v-for="(dati, index) in randomMails">
                 <div class="card mb-3">
                     <div class="card-header">
                         <h6>{{index + 1}}</h6>
                     </div>
                     <div class="card-body">
-                        <h5>{{mail}}</h5>
+                        <h5>{{dati}}</h5>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <div v-else class="row">
+            <div class="col"><h1>Caricamento...</h1></div>
         </div>
 
     </div>
